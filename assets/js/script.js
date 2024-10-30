@@ -33,6 +33,10 @@ function addMedicine() {
   `;
   table.appendChild(row);
   updateTotals();
+  if(i!=0){
+    document.querySelector(".billing").style.display ="block"
+    document.querySelector(".input-form").style.width ="50%"
+  }
   // reset input fields
   document.querySelector("#medicineName").value = "";
   document.querySelector("#quantity").value = "";
