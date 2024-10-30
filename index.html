@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Billing System</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="input-form">
+            <div class="header-section">
+                <img src="./assets/images/logo.png" alt="" width="122px">
+                <h2>SMIT Health center</h2>
+            </div>
+            <div class="form-area">
+                <label for="medicineName">Medicine Name:</label>
+                <select name="medicineName" id="medicineName">
+                    <option value="" selected hidden>select an option</option>
+                    <option value="Medicine 1">Medicine 1</option>
+                    <option value="Medicine 2">Medicine 2</option>
+                    <option value="Medicine 3">Medicine 3</option>
+                    <option value="Medicine 4">Medicine 4</option>
+                    <option value="Medicine 5">Medicine 5</option>
+                    <option value="Medicine 6">Medicine 6</option>
+                    <option value="Medicine 7">Medicine 7</option>
+                    <option value="Medicine 8">Medicine 8</option>
+                    <option value="Medicine 9">Medicine 9</option>
+                    <option value="Medicine 10">Medicine 10</option>
+                    <option value="Medicine 11">Medicine 11</option>
+                    <option value="Medicine 12">Medicine 12</option>
+                    <option value="Medicine 13">Medicine 13</option>
+                </select>
+            </div>
+            <div class="form-area">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" placeholder="Enter quantity" min="1" required>
+            </div>
+            <div class="form-area">
+                <label for="price">Price per unit:</label>
+                <input type="number" id="price" placeholder="Enter price" min="0.01" step="0.01" required>
+            </div>
+
+            <div class="buttons">
+                <button onclick="addMedicine()">Add Medicine</button>
+            </div>
+        </div>
+        <div class="billing">
+            <div class="header-bill">
+                <div class="logo-header-bill">
+                    <img src="./assets/images/logo.png" alt="" width="102px">
+                    <h2>SMIT Health center</h2>
+                </div>
+                <div class="details-client">
+                    <h4 id="clientname">Name: JOHN DOE</h4>
+                    <h4 id="locationclient">Address: Majitar, Sikkim 737136</h4>
+                    <h4 id="emailclient">Email: abc@gmail.com</h4>
+                </div>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SN</th>
+                            <th>Medicine Name</th>
+                            <th>Quantity</th>
+                            <th>Price per unit</th>
+                            <th>Total Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="medicineList"></tbody>
+                </table>
+            </div>
+
+            <!-- Total amount display -->
+            <div class="total">
+                <div class="download">
+                    <button>Download</button>
+                </div>
+                <div class="amount">
+                    <h4><span>Subtotal: ₹</span><span id="amount">0.00</span></h4>
+                    <h4><span>Tax (2%): ₹</span><span id="tax">0.00</span></h4>
+                    <h4><span>Total Amount: ₹</span><span id="totalamt">0.00</span></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
