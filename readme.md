@@ -22,6 +22,22 @@ This project is a **Medicine Billing System** designed to simplify and automate 
 ├── script.js      # JavaScript file for functionality (adding/removing medicines, updating totals)
 ```
 ## File Details
--index.html: Provides the structure of the system, including input forms and a billing table.
--style.css: CSS styles for the layout and user interface.
--script.js: JavaScript logic for adding, removing, and updating medicines.
+- **index.html**:
+- **assets/css/style.css**:
+- **assets/js/app.js**:
+---
+## Usage
+- **Select a medicine from the dropdown menu.**
+- **Enter the quantity and price per unit.**
+- **Click Add Medicine to add the item to the bill.**
+- **View the subtotal, tax, and total in real-time.**
+- **Use the Remove button to delete an item if needed.**
+---
+## Preview
+![Alt Text](assets/images/display.png)
+
+---
+## Further Update:
+- **Download functionality: Implement a feature to download the invoice.**
+- **Database integration: Store invoices and medicines in a database.**
+- **Client details form: Allow input of dynamic client information.**
